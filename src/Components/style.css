@@ -1,0 +1,314 @@
+.largeButton {
+  border: 1px solid #3897f0;
+  width: 268px;
+  padding: 5px 9px;
+  cursor: pointer;
+  height: 32px;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: "center";
+  line-height: 18px;
+}
+.FbLogo {
+  width: 20px;
+  margin-right: 10px;
+  margin-top: -2px;
+  color: white;
+}
+.smallButton {
+  border: 1px solid #3897f0;
+  /* width: 100px; */
+  padding: 5px 9px;
+  cursor: pointer;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.mediumButton {
+  border: 1px solid #3897f0;
+  width: 100px;
+  padding: 5px 9px;
+  cursor: pointer;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+@font-face {
+  font-family: "Billabong";
+  src: url("../Fonts/Billabong.ttf");
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding-bottom: 30px;
+  width: 350px;
+}
+.instaLogo {
+  display: block;
+  font-size: 50px;
+  padding: 0;
+  border: 0;
+  font-family: "Billabong";
+  vertical-align: baseline;
+  margin: 22px auto 12px;
+}
+.subtitle {
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 17px;
+  margin: 0 40px 10px;
+  color: #999;
+  text-align: center;
+}
+.input {
+  border: 1px solid lightgray;
+  background: #fafafa;
+  height: 40px;
+  font-size: 12px;
+  padding: 11px 0px 11px 8px;
+  width: 258px;
+  border-radius: 2px;
+}
+.input1 {
+  height: 15px;
+  border: 1px solid lightgray;
+  background: #fafafa;
+  font-size: 12px;
+  padding: 14px 0 2px 8px !important;
+  width: 258px;
+  border-radius: 2px;
+}
+.inputPlaceHolder {
+  color: #999;
+  font-size: 12px;
+  height: 36px;
+  left: -117px;
+  line-height: 32px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  transition: transform ease-out 0.1s;
+  transition: transform ease-out 0.1s, -webkit-transform ease-out 0.1s;
+
+  user-select: none;
+  white-space: nowrap;
+}
+.inputPlaceHolder1 {
+  color: #999;
+  top: -8px;
+  font-size: 10px;
+  height: 36px;
+  left: -152px;
+  line-height: 32px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  transition: -webkit-transform ease-out 0.1s;
+  transition: transform ease-out 0.1s;
+  transition: transform ease-out 0.1s, -webkit-transform ease-out 0.1s;
+  user-select: none;
+  white-space: nowrap;
+}
+.inputStart {
+  height: 36px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  margin-top: 10px;
+}
+.inputStart1 {
+  height: 36px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
+  padding: 0;
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  margin-top: 10px;
+}
+.downText {
+  color: gray;
+  font-size: 14px;
+}
+b {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+.imageBg {
+  width: 410px;
+  height: 600px;
+  background: url("../assets//MobilePhonePic.png  ");
+}
+.images {
+  margin-top: 96px;
+  margin-left: 131px;
+  width: 247px;
+}
+.haveAnAccount {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  width: 350px;
+  padding: 22px 0px 22px;
+  font-size: 14px;
+}
+.footer {
+  margin-top: 80px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #003569;
+}
+.footerParent {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+.allLinks {
+  display: flex;
+}
+.header {
+  /* position: fixed; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+.header-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderLogo {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.logo {
+  width: 30px;
+}
+.text {
+  font-family: "Billabong";
+  font-size: 30px;
+}
+.searchBar {
+  width: 240px;
+}
+
+.linksIcon {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card1 {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding-bottom: 30px;
+  width: 600px;
+}
+.profilePicCircle {
+  border: 2px solid #df386c;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 100px;
+}
+.postImage {
+  width: 100%;
+}
+.expression {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.comments {
+  width: 98%;
+  display: flex;
+  margin-left: 15px;
+  font-size: 14px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.name {
+  font-weight: 600;
+}
+.timeUpload{
+  display: flex;
+  color: gray;
+  font-size: 10px;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 15px;
+
+}
+@media only screen and (max-width: 1200px) {
+  .imageBg {
+    display: none;
+  }
+  .footer {
+    justify-content: center;
+    align-items: center;
+  }
+  .footerParent {
+    width: 80%;
+  }
+  .allLinks {
+    display: block;
+  }
+  .footerParent {
+    width: 100%;
+    display: block;
+  }
+}
