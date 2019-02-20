@@ -8,7 +8,7 @@ const profile = require("../../../assets/istagramLogo/profile.png");
 class Header extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="header" id="header">
         <div className="header-content">
           <div className="HeaderLogo">
             <p>
@@ -18,11 +18,11 @@ class Header extends Component {
                 alt=""
               />
             </p>
-            <p style={{ fontSize: 28, marginBottom: 25 }}>|</p>{" "}
-            <p className="text">Instagram</p>
+            <p className="line" id="line">|</p>{" "}
+            <p className="text" id="text">Instagram</p>
           </div>
           <div className="searchBar">
-                <Input placeholder="Search" height="30px" width="230px"/>
+                <Input className="input searchInput" placeholder="Search" height="30px" width="175px"/>
           </div>
           <div className="linksIcon">
                 <img style={{width: 30}} src={compass} alt=""/>
