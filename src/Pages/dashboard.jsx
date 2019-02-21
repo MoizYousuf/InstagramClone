@@ -54,10 +54,7 @@ class DashBoard extends Component {
             className="StoryCardPlusSuggestion"
             style={{
               marginTop: 140,
-              // Zindex: 0,
-              // position: "fixed",
-              // top: 20,
-              // left: 999
+              position: "sticky"
             }}
           >
             <ProfileNamePic />

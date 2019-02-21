@@ -284,7 +284,22 @@ b {
   justify-content: center;
   align-items: center;
 }
-
+.followButton {
+  align-items: center;
+  color: #3897f0;
+  margin-top: -10px;
+  display: flex;
+  font-weight: 600;
+  margin-right: 28px;
+  justify-content: center;
+  font-size: 12px;
+}
+.shareTitle {
+  margin-left: 10px;
+  font-weight: 600;
+  /* margin-top: 6px; */
+  font-size: 14px; 
+}
 .cardHeader {
   width: 90%;
   display: flex;
@@ -297,7 +312,6 @@ b {
   border: 2px solid #df386c;
   width: 50px;
   height: 50px;
-
   border-radius: 100px;
 }
 .postImage {

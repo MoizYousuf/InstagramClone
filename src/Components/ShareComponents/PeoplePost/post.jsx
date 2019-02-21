@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../../style.css";
 import Comment from "./comment";
 import { allSettled } from "rsvp";
+import { Modal } from "react-bootstrap";
 const image = require("../../.././assets/exam.jpg");
 const save = require("../../.././assets/istagramLogo/save.png");
 const save1 = require("../../.././assets/istagramLogo/save1.png");
@@ -52,13 +53,230 @@ class Post extends Component {
     this.state = {
       changeHeart: false,
       allComment: false,
-      changeSave: false
+      changeSave: false,
+      smShow: false,
+      mdShow: false
     };
   }
 
   render() {
+    let smClose = () => this.setState({ smShow: false });
+    let mdClose = () => this.setState({ mdShow: false });
+
     return (
       <div className="card1">
+        <Modal
+          size="md"
+          show={this.state.smShow}
+          onHide={smClose}
+          aria-labelledby="example-modal-sizes-title-sm"
+        >
+          <Modal.Header closeButton>
+            <Modal.Title id="example-modal-sizes-title-sm">Share</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                height: 50,
+                alignItems: "center"
+              }}
+            >
+              <i
+                style={{ color: "#415993", fontSize: 30 }}
+                class="fab fa-facebook-square"
+              />
+              <div className="shareTitle">Share to Facebook</div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                height: 50,
+                alignItems: "center"
+              }}
+            >
+              <i
+                style={{ color: "#3F88F7", fontSize: 30 }}
+                class="fab fa-facebook-messenger"
+              />
+              <div className="shareTitle">Share to Messenger</div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                height: 50,
+                alignItems: "center"
+              }}
+            >
+              <i
+                style={{ color: "#1DA1F2", fontSize: 30 }}
+                class="fab fa-twitter-square"
+              />
+              <div className="shareTitle">Share to Twitter</div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                height: 50,
+                alignItems: "center"
+              }}
+            >
+              <i
+                style={{ color: "black", fontSize: 30 }}
+                class="far fa-envelope"
+              />
+              <div className="shareTitle">Share via Email</div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                width: "100%",
+                height: 50,
+                alignItems: "center"
+              }}
+            >
+              <i style={{ color: "black", fontSize: 30 }} class="far fa-copy" />
+              <div className="shareTitle">Copy Link</div>
+            </div>
+          </Modal.Body>
+        </Modal>
+        <Modal
+          size="sm"
+          show={this.state.mdShow}
+          onHide={mdClose}
+          // width="1000px"
+          aria-labelledby="example-modal-sizes-title-sm"
+        >
+          {/* <Modal.Header closeButton>
+            <Modal.Title id="example-modal-sizes-title-sm">Share</Modal.Title>
+          </Modal.Header> */}
+          <Modal.Body>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+                color: "#ED4956",
+                fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 40
+              }}
+            >
+              Report inappropiate
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+                color: "#ED4956",
+                fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              Unfollow
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+
+                // fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              Go to post
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+
+                // fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              Embed
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+
+                // fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              Share
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                borderBottomColor: "lightgray",
+
+                // fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center"
+              }}
+            >
+              Copy Link
+            </div>
+            <div
+              style={{
+                textAlign: "center",
+                border: "1px solid transparent",
+                // borderBottomColor: "lightgray",
+
+                // fontWeight: 700,
+                fontSize: 14,
+                width: "100%",
+                height: 55,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer"
+              }}
+              onClick={() => {
+                this.setState({ mdShow: false });
+              }}
+            >
+              Cancel
+            </div>
+          </Modal.Body>
+        </Modal>
         <div
           style={{
             display: "flex",
@@ -67,8 +285,12 @@ class Post extends Component {
             alignItems: "center"
           }}
         >
-          <div className="profilePicCircle" >
-            <img src={require("../../../assets/exam.jpg")} style={{width: "90%", height: "90%", borderRadius: 100}} alt=""/>
+          <div className="profilePicCircle">
+            <img
+              src={require("../../../assets/exam.jpg")}
+              style={{ width: "90%", height: "90%", borderRadius: 100 }}
+              alt=""
+            />
           </div>
           <div style={{ marginLeft: 10 }}>itxmoizyousuf</div>
         </div>
@@ -107,7 +329,12 @@ class Post extends Component {
             <a href="#commentInput">
               <img src={comment} alt="" style={{ width: 47 }} />
             </a>
-            <img src={share} alt="" style={{ width: 25, marginTop: -4 }} />
+            <img
+              src={share}
+              alt=""
+              onClick={() => this.setState({ smShow: true })}
+              style={{ width: 25, marginTop: -4 }}
+            />
           </div>
           <div>
             {this.state.changeSave == false ? (
@@ -209,6 +436,7 @@ class Post extends Component {
               <img
                 className="inputComment"
                 src={dotMenu}
+                onClick={() => this.setState({ mdShow: true })}
                 alt=""
                 style={{ width: 30, height: 30 }}
               />
