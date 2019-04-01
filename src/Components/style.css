@@ -219,6 +219,7 @@ b {
   height: 80px;
   display: flex;
   justify-content: center;
+  z-index: 1024;
   align-items: center;
   border: 1px solid lightgray;
 }
@@ -298,7 +299,7 @@ b {
   margin-left: 10px;
   font-weight: 600;
   /* margin-top: 6px; */
-  font-size: 14px; 
+  font-size: 14px;
 }
 .cardHeader {
   width: 90%;
@@ -307,6 +308,136 @@ b {
   font-size: 13px;
   margin-top: 10px;
   /* align-items: center; */
+}
+.cardFollow {
+  border: 1px solid lightgray;
+  background: white;
+  width: 250px;
+  margin-left: 30px;
+  height: 185px;
+  border-radius: 5px;
+}
+.lightgray {
+  color: lightgray;
+}
+.textAlignRight {
+  text-align: right;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.widthPer175 {
+  width: 175%;
+}
+.backgroundWhite {
+  background: white;
+}
+.gray {
+  color: gray;
+}
+.marginRight5 {
+  margin-right: 5px;
+}
+.height55 {
+  height: 55px;
+}
+.fontWeigth7 {
+  font-weight: 700;
+}
+.FontSize12 {
+  font-size: 12px;
+  color: gray;
+}
+.MarginTop10 {
+  margin-top: 10px;
+}
+.MarginTop20 {
+  margin-top: 20px;
+}
+.MarginTop5 {
+  margin-top: 5px;
+}
+.fontSize14 {
+  font-size: 14px;
+}
+.FontSize13 {
+  font-size: 13px;
+}
+.fontWeigth6 {
+  font-weight: 600;
+}
+.borderTopGray {
+  border: 1px solid none;
+  border-top-color: gray;
+}
+.borderGray {
+  border: 1px solid lightgray;
+}
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.gray {
+  color: gray;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.overFlowX {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.width30 {
+  width: 30px;
+}
+.borderTransparent {
+  border: 1px solid transparent;
+}
+.borderTopColorGray {
+  border-top-color: lightgray;
+}
+.borderBottomColorGray {
+  border-bottom-color: lightgray;
+}
+.colorGray {
+  color: gray;
+}
+.marginBottom15 {
+  margin-top: -15px;
+}
+.textAlignCenter {
+  text-align: center;
+}
+.cursorPointer {
+  cursor: pointer;
+}
+.width60 {
+  width: 60px;
+}
+.widthPer68 {
+  width: 68%;
+}
+.height60 {
+  height: 60px;
+}
+.marginTop15 {
+  margin-top: 10px;
+}
+.marginTop30 {
+  margin-top: 30px;
+}
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profilePicCircle1 {
   border: 2px solid #df386c;
@@ -364,6 +495,139 @@ b {
   /* display: none; */
   margin-bottom: 25px;
 }
+.notification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px 13px;
+  border: 1px solid transparent;
+  border-bottom-color: lightgray;
+  /* width: 400px; */
+}
+/* .spinner-border{
+  width: 20px;
+  height: 10px;
+} */
+.flexDirectionRow {
+  flex-direction: row;
+}
+.flexWrap {
+  flex-wrap: wrap;
+}
+.imageCard {
+  margin-bottom: 20px;
+  height: 280px;
+  width: 264px;
+  position: relative;
+  margin-right: 28px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageCard:hover .image {
+  filter: grayscale(60%);
+}
+.imageCard1:hover .image {
+  filter: grayscale(60%);
+}
+
+.imageCard:hover .middle {
+  opacity: 1;
+}
+.imageCard1:hover .middle {
+  opacity: 1;
+}
+
+/* .text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+} */
+
+.allNotifications {
+  max-height: 362px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.bigImageCircle {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 150px;
+}
+.headingExplore {
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+.headingSuggested {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+.explorePageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeaderLogo:active {
+  color: gray;
+}
+.cardSuggested {
+  background: white;
+  width: 550px;
+}
+.suggestedPageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCard1 {
+  margin-bottom: 20px;
+  height: 280px;
+  width: 280px;
+  position: relative;
+  margin-right: 28px;
+}
+
+.popUpNotification {
+  max-height: 362px;
+  max-width: 600px;
+  /* overflow: auto; */
+  /* overflow-x: hidden; */
+  width: 450px;
+}
+.NotificationPersonName {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+}
 
 @media only screen and (max-width: 1200px) {
   .text {
@@ -398,6 +662,184 @@ b {
     align-items: center; */
   }
 }
+
+/* Profile Style */
+
+.JustifyContentSpaceBetween {
+  justify-content: space-between;
+}
+.marginLeft-28 {
+  margin-left: -28px;
+}
+.marginLeft30 {
+  margin-left: 30px;
+}
+.width120 {
+  width: 120px;
+}
+.marginTop30 {
+  margin-top: 30px;
+}
+.widthPer60 {
+  width: 60%;
+}
+.widthPer55 {
+  width: 55%;
+}
+.widthPer70 {
+  width: 70%;
+}
+.width180 {
+  width: 190px;
+}
+.widthPer85 {
+  width: 85%;
+}
+.widthPer120 {
+  width: 120%;
+}
+.widthPer69 {
+  width: 69%;
+}
+.marginTop50 {
+  margin-top: 50px;
+}
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+.colorDefault {
+  color: #3897f0;
+}
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+.widthPer40 {
+  width: 40%;
+}
+.marginTop5 {
+  margin-top: 5px;
+}
+.pointer {
+  cursor: pointer;
+}
+.height400 {
+  height: 400px;
+}
+.height450 {
+  height: 450px;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.marginLeft5 {
+  margin-left: 5px;
+}
+.marginTop-22 {
+  margin-top: -22px;
+}
+.colorBlue {
+  color: #3897f0;
+}
+.fontSize18 {
+  font-size: 18px;
+}
+.fontSize24 {
+  font-size: 24px;
+}
+.fontSize12 {
+  font-size: 12px;
+}
+.width185 {
+  width: 185px;
+}
+.widthPer100 {
+  width: 100%;
+}
+.widthPer80 {
+  width: 80%;
+}
+.heightPer100 {
+  height: 100%;
+}
+.marginLeft10 {
+  margin-left: 10px;
+}
+.height10 {
+  height: 10px;
+}
+.marginLeft20 {
+  margin-left: 20px;
+}
+.marginRight10 {
+  margin-right: 10px;
+}
+.white {
+  color: white;
+}
+.fontSize16 {
+  font-size: 16px;
+}
+
+.profileCircle {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+
+.profilePage {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  color: black;
+  font-size: 16px;
+}
+.flexDirectionCol {
+  flex-direction: column;
+}
+.width50 {
+  width: 50%;
+}
+.profileTop {
+  display: flex;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
+}
+.data {
+  width: 540px;
+}
+.nameHeading {
+  font-size: 26px;
+  font-weight: 100;
+}
+
+/* Setting Page */
+
+.smallProfileCircle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1360px) {
+  .imageCard {
+    width: 30% !important;
+    margin-right: 25px;
+    height: 35% !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .imageCard {
+    width: 30% !important;
+    margin-right: 10px;
+    height: 35% !important;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .StoryCardPlusSuggestion {
     display: none;
@@ -405,8 +847,35 @@ b {
   .header-content {
     width: 96%;
   }
+  .exploreHeading {
+    width: 90% !important;
+  }
+  .allImage {
+    width: 100% !important;
+  }
+  .imageCard {
+    width: 30% !important;
+    margin-right: 5px;
+    height: 35% !important;
+  }
+  .cardSlider {
+    width: 95% !important;
+  }
+  .suggestionText {
+    width: 90% !important;
+  }
 }
 @media only screen and (max-width: 800px) {
+  .cardSlider {
+    display: none;
+  }
+  .headingExplore {
+    display: none;
+  }
+  .suggestionText {
+    display: none;
+  }
+
   .card1 {
     width: 96%;
     justify-content: center;
@@ -417,6 +886,7 @@ b {
     width: 400px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .searchBar {
     display: none;

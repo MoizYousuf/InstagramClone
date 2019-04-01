@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "../Elements/buttons";
 
 class ProfileSuggestion extends Component {
   render() {
@@ -11,14 +12,14 @@ class ProfileSuggestion extends Component {
           justifyContent: "space-between"
         }}
       >
-        <div style={{display: "flex"}}>
+        <div style={{ display: "flex" }}>
           <div className="profilePicCircle" />
           <div style={{ marginLeft: 10 }}>
             <p
               style={{
                 marginTop: 1,
                 fontSize: 14,
-                marginLeft: -28,
+                marginLeft: this.props.marginLeft || -28,
                 fontWeight: 600
               }}
             >
@@ -36,7 +37,19 @@ class ProfileSuggestion extends Component {
             </p>
           </div>
         </div>
-        <div className="followButton">Follow</div>
+        {this.props.button ? (
+          <Button
+            // marginTop="10px"
+            color="white"
+            backgroundcolor="#3897F0"
+            // width="65px"
+            marginRight="25px"
+            name="Follow"
+            small
+          />
+        ) : (
+          <div className="followButton">Follow</div>
+        )}
       </div>
     );
   }
